@@ -19,7 +19,7 @@ function App() {
       </main>
 
       {/* Footer */}
-      <footer className="p-4 text-center">
+   
         <p className="text-white/80 text-sm font-medium">V1.1.1</p>
       </footer>
     </div>
