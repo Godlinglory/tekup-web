@@ -24,7 +24,8 @@ jobs:
           
       - name: Install dependencies
         run: npm ci
-        
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
       # Instead of npm run build, we use vercel build to generate .vercel/output
       - name: Build with Vercel
         run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
