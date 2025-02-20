@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Tuni Hack</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .animate-pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen bg-gradient-to-br from-indigo-600 via-purple-500 to-pink-500 flex flex-col">
+        <!-- Main content -->
+        <main class="flex-grow flex items-center justify-center">
+            <div class="text-center">
+                <div class="flex items-center justify-center gap-3 mb-2">
+                    <i data-lucide="sparkles" class="w-8 h-8 text-yellow-300 animate-pulse"></i>
+                    <h1 class="text-5xl md:text-7xl font-bold text-white tracking-wider">
+                        Hello, InnovLab Tekup
+                    </h1>
+                    <i data-lucide="sparkles" class="w-8 h-8 text-yellow-300 animate-pulse"></i>
+                </div>
+                <div class="w-64 h-1 mx-auto bg-gradient-to-r from-transparent via-yellow-300 to-transparent"></div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="p-4 text-center">
+            <p class="text-white/80 text-sm font-medium">V1.0.1</p>
+        
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
