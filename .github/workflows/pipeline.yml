@@ -61,9 +61,6 @@ jobs:
         with:
           name: vercel-output
           path: .vercel/output
-      ## We use vercel pull if we have stored 
-      # - name: Pull Vercel Environment Information
-      #   run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
 
       # Deploy the prebuilt project
       - name: Deploy to Vercel
